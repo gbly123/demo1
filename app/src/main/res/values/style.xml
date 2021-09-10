@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 默认Activity跳转动画 -->
+<!--    Activity A跳转到Activity B时Activity B进入动画;-->
+<!--    Activity A跳转到Activity B时Activity A退出动画;-->
+<!--    Activity B返回Activity A时Activity A的进入动画-->
+<!--    Activity B返回Activity A时ActivityB的退出动画-->
+    <style name="default_animation" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/hyperspace_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/hyperspace_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right</item>
+    </style>
+    <style name="AppTheme" mce_bogus="1" parent="@android:style/Theme.Light">
+        <item name="android:windowAnimationStyle">@style/default_animation</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>
